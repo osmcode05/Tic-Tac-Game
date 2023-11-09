@@ -53,7 +53,7 @@ function winner() {
             end(2,4,6)
         }
 }
-// equal match
+// equal match sutuation
 function equal(){
     if (
         (arr[0] !== arr[1] || arr[0] !== arr[2]) &&
