@@ -1,0 +1,82 @@
+/* =================== FONT FAMILY ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+/* ====================== COMMUN PROPRITIES ======================= */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+    display: flex; 
+}
+/* ====================== MAIN SECTION ======================= */
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 40%;
+    margin: auto;
+    color: #fff;
+}
+nav{
+    background-color: #ff0066;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5REM;
+}
+span{
+    color: #ffdd00;
+}
+.content{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.care{
+    width: 33.33%;
+    height:33.33%;
+    border: solid 2px #ffffff;
+    background-color: #ff0066;
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+}
+.care:hover{
+    background: #000;
+}
+/* ====================== Breakpoint ======================= */
+/* --- xsmall device --- */
+@media screen and ( width <= 576px) {
+    .main{
+        height: 75%;
+        width: 95%;
+    }
+    nav{
+        height: 8vh;
+        font-size: 1.1rem;
+    }
+}
+/* --- small device --- */
+@media screen and (577px<= width <= 768px) {
+    .main{
+        height: 75%;
+        width: 65%;
+    }
+    nav{
+        height: 12vh;
+    }
+}
+/* --- meduim device --- */
+@media screen and (769px <= width <= 991px) {
+    .main{
+        height: 80%;
+        width: 75%;
+    }
+    nav{
+        height: 15vh;
+    }
+}
