@@ -11,7 +11,7 @@ cares.forEach(care => {
             care.innerHTML = 'O';
             type = 'X';
         }
-        nav.innerHTML = `<span><h1>${type}</h1></span>`;
+        nav.innerHTML = `<h1><span>${type}</span></h1>`;
         winner()
         equal()
     }
@@ -75,9 +75,9 @@ function equal(){
             (arr[0] !== '' && arr[4] !== '' && arr[8] !== '')&&
             (arr[2] !== '' && arr[4] !== '' && arr[6] !== '')
         ) {
-            nav.innerHTML = `<span><h3>Equal Match</h3></span>`;
+            nav.innerHTML = `<h1><span>Equal Match</span></h1>`;
             setInterval(()=>{
-                nav.innerHTML += `<span>.</span>`;
+                nav.innerHTML += `<h1><span>.</span></h1>`;
             },500)
             setInterval(()=>{
                 location.reload()
